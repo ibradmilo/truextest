@@ -1,0 +1,46 @@
+{
+  "steps":[
+    {
+      "step":"background",
+      "img_elements":[],
+      "elements":[]
+    },{
+      "step":"f1",
+      "content":"",
+      "elements":[
+        {
+          "class":"video-container",
+          "content":""
+        }
+
+      ]
+    },{
+      "step":"f2",
+      "template_url":"html/f2.html"
+    },{
+      "step":"f3",
+      "template_url":"html/f3.html"
+    }
+  ],
+  "videos" :[
+    {
+      "id" : "video_main",
+      "thumb" : "main.jpg",
+      "media" : [
+        {
+          "url" : "//cdn.idiallo.com/assets/video/original_480.mp4",
+          "type" : "video/mp4"
+        }
+      ]
+    }
+
+  ],
+  "additional_assets" : [
+    "bg.jpg",
+    "main.jpg",
+    "play.png",
+    "quiet.jpg",
+    "foxdie.png",
+    "nowin.jpg"
+  ]
+}

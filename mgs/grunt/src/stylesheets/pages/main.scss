@@ -1,0 +1,370 @@
+$main_typeface: 'Neutra';
+$background_color: #111111;
+$pinkhex: #e03392;
+
+body {
+  &.demo {
+    zoom:1 !important;
+  }
+
+  /*demo fix*/
+  > #ad {
+    position:absolute;
+    top:58px;
+  }
+
+  /*superscript fix*/
+  sup, sub {
+     vertical-align: baseline;
+     position: relative;
+     top: -0.4em;
+  }
+  sub { top: 0.4em; }
+
+  #ad {
+    position:static;
+    width:960px;
+    height:500px;
+    overflow:hidden;
+    background-color:#fff;
+    font-family: $main_typeface, sans-serif;
+    font-size:26px;
+    color:#191919;
+    font-weight:400;
+    letter-spacing:0.005em;
+
+    img.video-safari-thumbnail {
+      pointer-events:none;
+      position:absolute;
+      top:0px;
+      left:0px;
+    }
+
+    .video-player {
+      margin:0px 0px 0px 0px;
+      width:960px;
+      height:500px;
+      opacity:1.0;
+      position:absolute;
+      top:0;
+      left:0;
+
+      video {
+        width:960px;
+        height:500px;
+      }
+
+      video::-webkit-media-controls {
+        display:none !important;
+      }
+
+      &.android {
+        video::-webkit-media-controls {
+          display:block !important;
+        }
+      }
+
+      &.paused {
+        cursor:pointer;
+        &:after {
+          content: ' ';
+          display:block;
+          position:absolute;
+          top:0;
+          left:0;
+          right:0;
+          bottom:0;
+          background:url(../assets/play.png) center center no-repeat;
+          pointer-events:none;
+        }
+
+        &.played {
+          &:after {
+            background:url(../assets/button.replay.png) center center no-repeat;
+          }
+        }
+      }
+
+    }
+
+    .logo-trident {
+      width:133px;
+      padding:82px 0 0 0;
+      height:0;
+      overflow:hidden;
+      box-sizing:border-box;
+      background:url(../assets/sprite.trident.01.png) 0 -800px no-repeat;
+      position:absolute;
+      bottom:16px;
+      right:9px;
+    }
+
+    .step {
+      opacity:0.0;
+      position:absolute;
+      top:0;
+      left:0;
+      pointer-events: none;
+      width:960px;
+      height:500px;
+      overflow:hidden;
+
+      &.active {
+        opacity:1.0;
+        pointer-events: auto;
+        transition:all 0.5s ease;
+      }
+
+    }
+
+    #background {
+      background-color:$background_color;
+      opacity:1.0;
+    }
+
+    #f1 {
+      background:url(../assets/bg.jpg) center center no-repeat;
+      background-size:cover;
+      .video-container {
+        position:absolute;
+        top:0;
+        left:0;
+        width:960px;
+        height:500px;
+        box-sizing:border-box;
+      }
+
+
+      &.active {
+
+      }
+    }
+
+    #f2 {
+      background-color:#3cbbea;
+
+      .text-question {
+        width:100%;
+        padding:180px 0 0 0;
+        height:0;
+        overflow:hidden;
+        box-sizing:border-box;
+        opacity:0.0;
+        background:url(../assets/sprite.trident.01.png) center 0 no-repeat;
+        margin-top:49px;
+      }
+
+      form {
+        position:absolute;
+        top:187px;
+        left:0;
+        right:0;
+        bottom:0;
+        box-sizing:border-box;
+        margin:0;
+        opacity:0.0;
+
+        padding:0 154px;
+
+        .question-container {
+          padding-bottom:15px;
+          position:relative;
+
+          .circle-result {
+            position:absolute;
+            left:-67px;
+            top:0;
+
+            width:60px;
+            height:60px;
+            background-color:$pinkhex;
+            text-align:center;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:24px;
+            padding-top:16px;
+            opacity:0.0;
+            border-radius:60px;
+            color:#fff;
+            font-weight:bold;
+
+            &.active {
+              opacity:1.0;
+              transition:all 0.5s ease;
+            }
+
+          }
+
+          .t-question {
+            height:58px;
+            line-height:58px;
+            text-align:center;
+            font-size:25px;
+            font-family:Arial, Helvetica, sans-serif;
+            background-color:#1d6783;
+            color:#fff;
+            vertical-align:middle;
+            cursor:pointer;
+            position:relative;
+
+            span {
+              position:relative;
+              z-index:100;
+            }
+
+            .results {
+              position:absolute;
+              top:0;
+              left:0;
+              bottom:0;
+              width:0;
+              background-color:$pinkhex;
+            }
+          }
+
+        }
+      }
+
+
+      &.active {
+        .text-question,
+        form {
+          opacity:1.0;
+          transition:all 0.5s ease;
+        }
+      }
+
+
+    }
+
+    #f3 {
+      background-color:$background_color;
+
+      .text-smile-awards {
+        width:100%;
+        padding:393px 0 0 0;
+        height:0;
+        overflow:hidden;
+        box-sizing:border-box;
+        opacity:0.0;
+        background:url(../assets/sprite.trident.01.png) center -250px no-repeat;
+        position:relative;
+
+        .arrow-left {
+          display:block;
+          width:64px;
+          height:0;
+          padding:46px 0 0 0;
+          overflow:hidden;
+          box-sizing:border-box;
+          background:url(../assets/sprite.trident.01.png) -100px -700px no-repeat;
+          position:absolute;
+          top:318px;
+          right:205px;
+
+          animation-name: sway-right;
+          animation-duration: 1.2s;
+          animation-iteration-count: infinite;
+          -webkit-animation-name: sway-right;
+          -webkit-animation-duration: 1.2s;
+          -webkit-animation-iteration-count: infinite;
+
+        }
+
+        .arrow-right {
+          display:block;
+          width:64px;
+          height:0;
+          padding:46px 0 0 0;
+          overflow:hidden;
+          box-sizing:border-box;
+          background:url(../assets/sprite.trident.01.png) 0 -700px no-repeat;
+          position:absolute;
+          top:318px;
+          left:205px;
+
+          animation-name: sway-left;
+          animation-duration: 1.2s;
+          animation-iteration-count: infinite;
+          -webkit-animation-name: sway-left;
+          -webkit-animation-duration: 1.2s;
+          -webkit-animation-iteration-count: infinite;
+        }
+      }
+
+      .button-row {
+        text-align:center;
+        opacity:0.0;
+
+        .button-learn-more {
+          display:inline-block;
+          margin-right:5px;
+          width:296px;
+          padding:63px 0 0 0;
+          height:0;
+          overflow:hidden;
+          box-sizing:border-box;
+          background:url(../assets/sprite.trident.01.png) -200px -700px no-repeat;
+        }
+        .button-calendar {
+          display:inline-block;
+          margin-left:5px;
+          width:296px;
+          padding:63px 0 0 0;
+          height:0;
+          overflow:hidden;
+          box-sizing:border-box;
+          background:url(../assets/sprite.trident.01.png) -500px -700px no-repeat;
+        }
+      }
+
+      &.active {
+        .text-smile-awards,
+        .button-row {
+          opacity:1.0;
+          transition:all 0.5s ease;
+        }
+      }
+    }
+
+
+  }
+
+}
+
+.clear
+{
+  clear:both;
+}
+
+@keyframes sway-left {
+    50% {
+      -ms-transform: translate(-20px,0); /* IE 9 */
+      -webkit-transform: translate(-20px,0); /* Safari */
+      transform: translate(-20px,0);
+    }
+}
+
+@-webkit-keyframes sway-left {
+    50% {
+      -ms-transform: translate(-20px,0); /* IE 9 */
+      -webkit-transform: translate(-20px,0); /* Safari */
+      transform: translate(-20px,0);
+    }
+}
+
+@keyframes sway-right {
+    50% {
+      -ms-transform: translate(20px,0); /* IE 9 */
+      -webkit-transform: translate(20px,0); /* Safari */
+      transform: translate(20px,0);
+    }
+}
+
+@-webkit-keyframes sway-right {
+    50% {
+      -ms-transform: translate(20px,0); /* IE 9 */
+      -webkit-transform: translate(20px,0); /* Safari */
+      transform: translate(20px,0);
+    }
+}

@@ -1,0 +1,380 @@
+body {
+  /*demo fix*/
+  /*superscript fix*/ }
+  body.demo {
+    zoom: 1 !important; }
+  body > #ad {
+    position: absolute;
+    top: 58px; }
+  body sup, body sub {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em; }
+  body sub {
+    top: 0.4em; }
+  body #ad {
+    position: static;
+    width: 960px;
+    height: 500px;
+    overflow: hidden;
+    background-color: #fff;
+    font-family: "Neutra", sans-serif;
+    font-size: 26px;
+    color: #191919;
+    font-weight: 400;
+    letter-spacing: 0.005em; }
+    body #ad img.video-safari-thumbnail {
+      pointer-events: none;
+      position: absolute;
+      top: 0px;
+      left: 0px; }
+    body #ad .video-player {
+      margin: 0px 0px 0px 0px;
+      width: 960px;
+      height: 500px;
+      opacity: 1.0;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      body #ad .video-player video {
+        width: 960px;
+        height: 500px; }
+      body #ad .video-player video::-webkit-media-controls {
+        display: none !important; }
+      body #ad .video-player.android video::-webkit-media-controls {
+        display: block !important; }
+      body #ad .video-player.paused{
+         cursor:pointer;
+      }
+      body #ad .video-player.paused:after {
+        content: ' ';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url(../assets/play.png) center center no-repeat;
+        pointer-events: none;}
+      body #ad .video-player.paused.played:after {
+        background: url(../assets/button.replay.png) center center no-repeat; }
+    body #ad .logo-trident {
+      width: 133px;
+      padding: 82px 0 0 0;
+      height: 0;
+      overflow: hidden;
+      box-sizing: border-box;
+      background: url(../assets/sprite.trident.01.png) 0 -800px no-repeat;
+      position: absolute;
+      bottom: 16px;
+      right: 9px; }
+    body #ad .step {
+      opacity: 0.0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 960px;
+      height: 500px;
+      overflow: hidden; }
+      body #ad .step.active {
+        opacity: 1.0;
+        pointer-events: auto;
+        transition: all 0.5s ease; }
+    body #ad #background {
+      background-color: #111111;
+      opacity: 1.0; }
+    body #ad #f1 {
+      background: url(../assets/bg.jpg) center center no-repeat;
+      background-size: cover; }
+      body #ad #f1 .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 960px;
+        height: 500px;
+        box-sizing: border-box; }
+    body #ad #f2 {
+      background-color: #0E1011; }
+    body #ad #f2 {
+      background: url(../assets/quiet.jpg) center center no-repeat;
+      position:relative;
+    }body #ad #f2 .f2-bg {
+      position:absolute;
+      top:32px;
+      right:32px;
+      width:300px;
+    }
+    body #ad #f2 .f2-bg .header h2{
+      color:#ffffff;
+      text-align: center;
+    }
+    body #ad #f2 .f2-bg .choice {
+      margin:6px 0 32px 0;
+    }
+    body #ad #f2 .f2-bg .choice .js-name{
+      background-color:#c0392b;
+      color:#fff;
+      display:block;
+      padding:6px 12px;
+      text-align: center;
+      cursor:pointer;
+    }
+    body #ad #f2 .f2-bg .choice .js-name.clicked{
+      cursor: default;
+    }
+    body #ad #f2 .f2-bg .choice .js-name:hover {
+      background-color: #e74c3c;
+    }
+    body #ad #f2 .f2-bg .choice .js-name.clicked:hover {
+      background-color: #c0392b;
+    }
+    body #ad #f2 .f2-bg .choice .result {
+      position: relative;
+      height:0px;
+      background-color: #2c3e50;
+    }
+    body #ad #f2 .f2-bg .choice .result .bar {
+      position: absolute;
+      top:0;
+      left:0;
+      width:0%;
+      height:100%;
+      background-color:#2980b9;
+    }
+    body #ad #f2 .f2-bg .choice .result .count{
+      position: absolute;
+      top:0;
+      left:0;
+      width:0%;
+      height:100%;
+      text-align: right;
+      color:#fff;
+    }
+    body #ad #f2 .thanks {
+      display:none;
+      position: absolute;
+      background:url(../assets/bg.jpg) no-repeat 0 0;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      opacity:0;
+      background-size:cover;
+    }
+    body #ad #f2 .thanks p {
+      position:absolute;
+      width: 100%;
+      text-align: center;
+      color:#fff;
+      text-transform: uppercase;
+      border-top:2px solid #FAA183;
+      border-bottom:2px solid #FAA183;
+      top:40%;
+      padding:8px 0;
+      background-color: rgba(0,0,0,.6);
+    }
+      body #ad #f2 .text-question {
+        width: 100%;
+        padding: 180px 0 0 0;
+        height: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+        opacity: 0.0;
+        background: url(../assets/sprite.trident.01.png) center 0 no-repeat;
+        margin-top: 49px; }
+      body #ad #f2 form {
+        position: absolute;
+        top: 187px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-sizing: border-box;
+        margin: 0;
+        opacity: 0.0;
+        padding: 0 154px; }
+        body #ad #f2 form .question-container {
+          padding-bottom: 15px;
+          position: relative; }
+          body #ad #f2 form .question-container .circle-result {
+            position: absolute;
+            left: -67px;
+            top: 0;
+            width: 60px;
+            height: 60px;
+            background-color: #e03392;
+            text-align: center;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            padding-top: 16px;
+            opacity: 0.0;
+            border-radius: 60px;
+            color: #fff;
+            font-weight: bold; }
+            body #ad #f2 form .question-container .circle-result.active {
+              opacity: 1.0;
+              transition: all 0.5s ease; }
+          body #ad #f2 form .question-container .t-question {
+            height: 58px;
+            line-height: 58px;
+            text-align: center;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1d6783;
+            color: #fff;
+            vertical-align: middle;
+            cursor: pointer;
+            position: relative; }
+            body #ad #f2 form .question-container .t-question span {
+              position: relative;
+              z-index: 100; }
+            body #ad #f2 form .question-container .t-question .results {
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              width: 0;
+              background-color: #e03392; }
+      body #ad #f2.active .text-question,
+      body #ad #f2.active form {
+        opacity: 1.0;
+        transition: all 0.5s ease; }
+    body #ad #f3 {
+      background-color: #111; }
+    body #ad #f3 .f3-bg {
+      background: url(../assets/nowin.jpg) center center no-repeat;
+      height: 100%;
+      position:relative;
+    }
+    body #ad #f3 .f3-bg .fox {
+      top:100px;
+      left:50%;
+      transform:translateX(-50%);
+      position: absolute;
+      width:300px;
+      height:300px;
+      background: url("../assets/foxdie.png") no-repeat;
+      background-size: cover;
+
+    }
+    body #ad #f3 .f3-bg .js-exit-button{
+      padding-top:400px;
+    }
+    body #ad #f3 .f3-bg .js-exit-button a{
+      margin:0 auto;
+      display:block;
+      width:230px;
+      text-align: center;
+      color:#fff;
+      background-color: #c0392b;
+      text-transform: uppercase;
+      padding:6px 12px;
+    }
+    body #ad #f3 .f3-bg .js-exit-button a:hover {
+      color:#fff;
+      background-color:#e74c3c;
+      text-decoration: none;
+    }
+      body #ad #f3 .text-smile-awards {
+        width: 100%;
+        padding: 393px 0 0 0;
+        height: 0;
+        overflow: hidden;
+        box-sizing: border-box;
+        opacity: 0.0;
+        background: url(../assets/sprite.trident.01.png) center -250px no-repeat;
+        position: relative; }
+        body #ad #f3 .text-smile-awards .arrow-left {
+          display: block;
+          width: 64px;
+          height: 0;
+          padding: 46px 0 0 0;
+          overflow: hidden;
+          box-sizing: border-box;
+          background: url(../assets/sprite.trident.01.png) -100px -700px no-repeat;
+          position: absolute;
+          top: 318px;
+          right: 205px;
+          animation-name: sway-right;
+          animation-duration: 1.2s;
+          animation-iteration-count: infinite;
+          -webkit-animation-name: sway-right;
+          -webkit-animation-duration: 1.2s;
+          -webkit-animation-iteration-count: infinite; }
+        body #ad #f3 .text-smile-awards .arrow-right {
+          display: block;
+          width: 64px;
+          height: 0;
+          padding: 46px 0 0 0;
+          overflow: hidden;
+          box-sizing: border-box;
+          background: url(../assets/sprite.trident.01.png) 0 -700px no-repeat;
+          position: absolute;
+          top: 318px;
+          left: 205px;
+          animation-name: sway-left;
+          animation-duration: 1.2s;
+          animation-iteration-count: infinite;
+          -webkit-animation-name: sway-left;
+          -webkit-animation-duration: 1.2s;
+          -webkit-animation-iteration-count: infinite; }
+      body #ad #f3 .button-row {
+        text-align: center;
+        opacity: 0.0; }
+        body #ad #f3 .button-row .button-learn-more {
+          display: inline-block;
+          margin-right: 5px;
+          width: 296px;
+          padding: 63px 0 0 0;
+          height: 0;
+          overflow: hidden;
+          box-sizing: border-box;
+          background: url(../assets/sprite.trident.01.png) -200px -700px no-repeat; }
+        body #ad #f3 .button-row .button-calendar {
+          display: inline-block;
+          margin-left: 5px;
+          width: 296px;
+          padding: 63px 0 0 0;
+          height: 0;
+          overflow: hidden;
+          box-sizing: border-box;
+          background: url(../assets/sprite.trident.01.png) -500px -700px no-repeat; }
+      body #ad #f3.active .text-smile-awards,
+      body #ad #f3.active .button-row {
+        opacity: 1.0;
+        transition: all 0.5s ease; }
+
+.clear {
+  clear: both; }
+
+@keyframes sway-left {
+  50% {
+    -ms-transform: translate(-20px, 0);
+    /* IE 9 */
+    -webkit-transform: translate(-20px, 0);
+    /* Safari */
+    transform: translate(-20px, 0); } }
+@-webkit-keyframes sway-left {
+  50% {
+    -ms-transform: translate(-20px, 0);
+    /* IE 9 */
+    -webkit-transform: translate(-20px, 0);
+    /* Safari */
+    transform: translate(-20px, 0); } }
+@keyframes sway-right {
+  50% {
+    -ms-transform: translate(20px, 0);
+    /* IE 9 */
+    -webkit-transform: translate(20px, 0);
+    /* Safari */
+    transform: translate(20px, 0); } }
+@-webkit-keyframes sway-right {
+  50% {
+    -ms-transform: translate(20px, 0);
+    /* IE 9 */
+    -webkit-transform: translate(20px, 0);
+    /* Safari */
+    transform: translate(20px, 0); } }
+
+/*# sourceMappingURL=application.css.map */
