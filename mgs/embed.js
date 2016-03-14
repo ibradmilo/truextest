@@ -12,7 +12,7 @@
 //      if(host.indexOf('local.stash.truex.com') >= 0) {
 
 //        serviceUrl = "//local.stash.truex.com/trident/"
-	serviceUrl = "//localhostest.com/truex/mgs/";
+	serviceUrl = serviceUrl.substring(0,serviceUrl.lastIndexOf("/") + 1);
 //      }
 
       $.when(
